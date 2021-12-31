@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  width: 500px;
+  height: 500px;
+  background-image: url("https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg");
+  background-size: cover;
+}
+.img {
+  height: 100%;
+  width: 100%;
+}
