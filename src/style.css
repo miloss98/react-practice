@@ -2,14 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
-.background {
-  width: 500px;
+
+.all {
+  margin: 5rem 3rem 0rem 3rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+.book {
+  margin-right: 3rem;
+}
+
+img {
   height: 500px;
-  background-image: url("https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg");
-  background-size: cover;
-}
-.img {
-  height: 100%;
-  width: 100%;
+  width: 500px;
 }
