@@ -41,14 +41,14 @@ const MovieComponent = () => {
   );
 };
 
-const Movie = (props) => {
+const Movie = ({ title, img, releaseDate, director }) => {
   return (
     <article>
       <div>
-        <h2>Title: {props.title}</h2>
-        <img src={props.img} alt="" />
-        <p> Release date: {props.releaseDate}</p>
-        <p> Director: {props.director} </p>
+        <h2>Title: {title}</h2>
+        <img src={img} alt="" />
+        <p> Release date: {releaseDate}</p>
+        <p> Director: {director} </p>
       </div>
     </article>
   );
