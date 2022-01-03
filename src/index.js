@@ -16,9 +16,9 @@ const movies = [
     director: "Cristopher Nolan",
   },
   {
-    title: "Batman  ",
-    img: "https://cdn1.epicgames.com/undefined/offer/batman-arkham-asylum_promo-1567x917-f1248a17909e224f91845b223542306a.jpg",
-    releaseDate: "2009",
+    title: "Batman Begins",
+    img: "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+    releaseDate: "2005",
     director: "Cristopher Nolan",
   },
 ];
@@ -26,6 +26,7 @@ const movies = [
 const MovieComponent = () => {
   return (
     <>
+      <h1 className="title"> Movies list </h1>
       <div className="all">
         {movies.map((movie) => {
           return <Movie movie={movie}></Movie>;
@@ -35,8 +36,8 @@ const MovieComponent = () => {
   );
 };
 
-const Movie = (props) => {
-  const { title, img, releaseDate, director } = props.movie;
+const Movie = ({ movie }) => {
+  const { title, img, releaseDate, director } = movie;
   return (
     <article className="movies">
       <div>
