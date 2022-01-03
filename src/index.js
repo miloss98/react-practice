@@ -2,48 +2,43 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
 
-const inception = {
-  title: "Inception",
-  img: "https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",
-  releaseDate: "2010",
-  director: "Cristopher Nolan",
-};
-
-const interstellar = {
-  title: "Interstellar",
-  img: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-  releaseDate: "2014",
-  director: "Cristopher Nolan",
-};
+const movies = [
+  {
+    title: "Inception",
+    img: "https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",
+    releaseDate: "2010",
+    director: "Cristopher Nolan",
+  },
+  {
+    title: "Interstellar",
+    img: "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+    releaseDate: "2014",
+    director: "Cristopher Nolan",
+  },
+  {
+    title: "Batman  ",
+    img: "https://cdn1.epicgames.com/undefined/offer/batman-arkham-asylum_promo-1567x917-f1248a17909e224f91845b223542306a.jpg",
+    releaseDate: "2009",
+    director: "Cristopher Nolan",
+  },
+];
 
 const MovieComponent = () => {
   return (
     <>
       <div className="all">
-        <div className="book">
-          <Movie
-            title={inception.title}
-            img={inception.img}
-            releaseDate={inception.releaseDate}
-            director={inception.director}
-          />
-        </div>
-        <div className="book">
-          <Movie
-            title={interstellar.title}
-            img={interstellar.img}
-            releaseDate={interstellar.releaseDate}
-            director={interstellar.director}
-          />
-        </div>
+        {movies.map((movie) => {
+          return <Movie movie={movie}></Movie>;
+        })}
       </div>
     </>
   );
 };
 
-const Movie = ({ title, img, releaseDate, director }) => {
+const Movie = (props) => {
+  const { title, img, releaseDate, director } = props.movie;
   return (
-    <article>
+    <article className="movies">
       <div>
         <h2>Title: {title}</h2>
         <img src={img} alt="" />

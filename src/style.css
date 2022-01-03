@@ -13,8 +13,9 @@
   justify-content: flex-start;
   align-items: center;
 }
-.book {
-  margin-right: 3rem;
+.movies {
+  display: flex;
+  margin-right: 2rem;
 }
 
 img {
