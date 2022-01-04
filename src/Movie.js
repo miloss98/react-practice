@@ -11,7 +11,7 @@ const Movie = (props) => {
       setText("click me to change me");
     }
   };
-  /// testestest
+
   return (
     <article className="movies">
       <div>
