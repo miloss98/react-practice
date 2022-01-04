@@ -1,21 +1,26 @@
-const showAlert = () => {
-  alert("alert!!");
-};
+import { useState } from "react";
 
 const Movie = (props) => {
   const { title, img, releaseDate, director } = props;
-  const hover = () => {
-    alert(`You are hovering: ${title}`);
+  // useState basic example
+  const [text, setText] = useState("click me to change me");
+  const textChange = () => {
+    if (text === "click me to change me") {
+      setText("my text changed");
+    } else {
+      setText("click me to change me");
+    }
   };
+  /// end of
   return (
     <article className="movies">
       <div>
-        <h2 onMouseOver={hover}> Title: {title}</h2>
+        <h2> Title: {title}</h2>
         <img src={img} alt="" />
         <p> Release date: {releaseDate}</p>
         <p> Director: {director} </p>
-        <button type="button" onClick={showAlert}>
-          Click me
+        <button type="button" onClick={() => textChange()}>
+          {text}
         </button>
       </div>
     </article>
