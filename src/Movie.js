@@ -3,13 +3,14 @@ import { useState } from "react";
 const Movie = (props) => {
   const { title, img, releaseDate, director } = props;
   // useState basic example
-  const [text, setText] = useState("click me to change me");
-  const textChange = () => {
-    if (text === "click me to change me") {
-      setText("my text changed");
-    } else {
-      setText("click me to change me");
-    }
+  const [movie, setMovie] = useState({
+    country: "America",
+    runtime: "2h30min",
+    age: "18+",
+  });
+
+  const changeNumber = () => {
+    setMovie({ ...movie, runtime: "1h45min" });
   };
 
   return (
@@ -19,8 +20,9 @@ const Movie = (props) => {
         <img src={img} alt="" />
         <p> Release date: {releaseDate}</p>
         <p> Director: {director} </p>
-        <button type="button" onClick={() => textChange()}>
-          {text}
+        <p> Runtime: {movie.runtime}</p>
+        <button type="button" onClick={changeNumber}>
+          Change number
         </button>
       </div>
     </article>
