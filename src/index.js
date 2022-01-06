@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./style.css";
 import { movies } from "./movies";
 import Movie from "./Movie";
+import Counter from "./Counter";
 
 const MovieComponent = () => {
   return (
@@ -12,6 +13,12 @@ const MovieComponent = () => {
         {movies.map((movie) => {
           return <Movie {...movie}></Movie>;
         })}
+      </div>
+      <div>
+        <h1>Counter</h1>
+        <div>
+          <Counter />
+        </div>
       </div>
     </>
   );
