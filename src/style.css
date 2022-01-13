@@ -19,15 +19,15 @@
 }
 .movies {
   display: flex;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 img {
   height: 300px;
-  width: 250px;
+  width: 240px;
 }
 /* counter.js styling */
 .container {
-  margin: 2rem 0rem 0rem 3rem;
+  margin: 3rem 0rem 0rem 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -47,4 +47,30 @@ img {
 }
 .value {
   margin: 1rem 0rem 1rem 0rem;
+}
+/* Watchlist styling */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+section h3 {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+section button {
+  height: 2rem;
+  width: 10rem;
+}
+article {
+  padding: 1rem;
+  text-align: center;
+}
+article h1 {
+  font-size: 1.5rem;
+}
+article p {
+  font-size: 1.2rem;
 }
