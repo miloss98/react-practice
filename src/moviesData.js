@@ -1,4 +1,4 @@
-export const movies = [
+export const moviesData = [
   {
     title: "Inception",
     img: "https://flxt.tmsimg.com/assets/p7825626_p_v10_af.jpg",

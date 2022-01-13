@@ -25,3 +25,26 @@ img {
   height: 300px;
   width: 250px;
 }
+/* counter.js styling */
+.container {
+  margin: 2rem 0rem 0rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.counterTitle {
+  font-size: 1.7rem;
+  color: red;
+}
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btnContainer button {
+  margin-right: 2rem;
+  background: yellow;
+}
+.value {
+  margin: 1rem 0rem 1rem 0rem;
+}
