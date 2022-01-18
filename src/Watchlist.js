@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { moviesData } from "./moviesData";
 
-function Watchlist() {
+const Watchlist = () => {
   const [movies, setMovies] = useState(moviesData);
   return (
     <main>
@@ -28,6 +28,6 @@ function Watchlist() {
       </section>
     </main>
   );
-}
+};
 
 export default Watchlist;
