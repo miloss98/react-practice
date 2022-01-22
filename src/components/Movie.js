@@ -2,7 +2,7 @@ const Movie = (props) => {
   const { title, img, releaseDate, director } = props;
 
   return (
-    <article className="movies">
+    <article>
       <div>
         <h2> Title: {title}</h2>
         <img src={img} alt="" />

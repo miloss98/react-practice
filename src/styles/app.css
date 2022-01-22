@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 4rem;
+}
+.all {
+  margin: 6rem 0rem 0rem 6rem;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+img {
+  height: 250px;
+  width: 220px;
+}

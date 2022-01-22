@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { moviesData } from "../moviesData";
+import "../styles/watchlist.css";
 
 const Watchlist = () => {
   const [movies, setMovies] = useState(moviesData);
@@ -15,10 +16,15 @@ const Watchlist = () => {
               <h1> Title: {title} </h1>
               <p> Release date: {releasedate} </p>
               <p> Director: {director}</p>
+              <button className="remove-btn" type="button">
+                {" "}
+                Remove from list{" "}
+              </button>
             </article>
           );
         })}
         <button
+          className="clear-all-btn"
           onClick={() => {
             setMovies([]);
           }}
