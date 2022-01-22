@@ -1,9 +1,9 @@
 import React from "react";
-import { moviesData } from "../moviesData";
-import Movie from "./Movie";
-import Counter from "./Counter";
-import Watchlist from "./Watchlist";
-import "../styles/app.css";
+import { moviesData } from "./data/moviesData";
+import Movie from "./components/Movie";
+import Counter from "./components/Counter";
+import Watchlist from "./components/Watchlist";
+import "./styles/app.css";
 
 const App = () => {
   return (

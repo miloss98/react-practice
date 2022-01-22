@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { moviesData } from "../moviesData";
+import { moviesData } from "../data/moviesData";
 import "../styles/watchlist.css";
 
 const Watchlist = () => {
