@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { moviesData } from "./moviesData";
+import { moviesData } from "../moviesData";
 
 const Watchlist = () => {
   const [movies, setMovies] = useState(moviesData);
@@ -8,9 +8,10 @@ const Watchlist = () => {
       <section>
         <h3> {movies.length} movies on your watchlist.</h3>
         {movies.map((movie) => {
-          const { id, title, releasedate, director } = movie;
+          const { id, img, title, releasedate, director } = movie;
           return (
             <article key={id}>
+              <img src={img} alt={title} />
               <h1> Title: {title} </h1>
               <p> Release date: {releasedate} </p>
               <p> Director: {director}</p>
