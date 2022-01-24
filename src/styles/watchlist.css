@@ -31,3 +31,7 @@ article p {
 .clear-all-btn {
   background: crimson;
 }
+.small-imgs {
+  height: 120px;
+  width: 120px;
+}

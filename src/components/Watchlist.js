@@ -12,7 +12,7 @@ const Watchlist = () => {
           const { id, img, title, releasedate, director } = movie;
           return (
             <article key={id}>
-              <img src={img} alt={title} />
+              <img className="small-imgs" src={img} alt={title} />
               <h1> Title: {title} </h1>
               <p> Release date: {releasedate} </p>
               <p> Director: {director}</p>

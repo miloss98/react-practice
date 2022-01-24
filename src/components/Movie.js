@@ -5,7 +5,7 @@ const Movie = (props) => {
     <article>
       <div>
         <h2> Title: {title}</h2>
-        <img src={img} alt="" />
+        <img className="big-imgs" src={img} alt="" />
         <p> Release date: {releaseDate}</p>
         <p> Director: {director} </p>
       </div>
