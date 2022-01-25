@@ -4,6 +4,15 @@ import "../styles/watchlist.css";
 
 const Watchlist = () => {
   const [movies, setMovies] = useState(moviesData);
+
+  //Filter function which removes clicked item by item's id and makes new watchlist
+  const removeMovie = (id) => {
+    let newWatchlist = movies.filter((movie) => {
+      return movie.id !== id;
+    });
+    setMovies(newWatchlist);
+  };
+
   return (
     <main>
       <section>
@@ -16,7 +25,7 @@ const Watchlist = () => {
               <h1> Title: {title} </h1>
               <p> Release date: {releasedate} </p>
               <p> Director: {director}</p>
-              <button className="remove-btn" type="button">
+              <button className="remove-btn" onClick={() => removeMovie(id)}>
                 {" "}
                 Remove from list{" "}
               </button>
