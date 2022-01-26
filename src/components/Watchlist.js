@@ -15,8 +15,8 @@ const Watchlist = () => {
 
   return (
     <main>
+      <h3> {movies.length} movies on your watchlist.</h3>
       <section>
-        <h3> {movies.length} movies on your watchlist.</h3>
         {movies.map((movie) => {
           const { id, img, title, releasedate, director } = movie;
           return (
@@ -32,6 +32,8 @@ const Watchlist = () => {
             </article>
           );
         })}
+      </section>
+      <div className="button-div">
         <button
           className="clear-all-btn"
           onClick={() => {
@@ -41,7 +43,7 @@ const Watchlist = () => {
         >
           Clear watchlist
         </button>
-      </section>
+      </div>
     </main>
   );
 };

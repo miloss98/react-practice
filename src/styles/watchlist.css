@@ -1,10 +1,12 @@
 /* Watchlist styling */
+h3 {
+  text-align: center;
+  font-size: 25px;
+  padding: 3rem 0rem 3rem 0rem;
+}
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 section h3 {
   font-size: 2rem;
@@ -19,7 +21,7 @@ article {
   text-align: center;
 }
 article h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 article p {
   font-size: 1.2rem;
@@ -28,10 +30,19 @@ article p {
 .remove-btn {
   background: chartreuse;
 }
-.clear-all-btn {
-  background: crimson;
-}
+
 .small-imgs {
   height: 120px;
   width: 120px;
+}
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0rem 3rem 0rem;
+}
+.clear-all-btn {
+  background: crimson;
+  height: 2rem;
+  width: 10rem;
 }
