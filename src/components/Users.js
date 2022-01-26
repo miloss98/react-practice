@@ -4,16 +4,39 @@ const url = "https://api.github.com/users";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isError, setIsError] = useState(false);
 
   const fetchUserData = async () => {
     const response = await fetch(url);
-    const usersData = await response.json();
-    setUsers(usersData);
+    if (response.status >= 200 && response.status < 299) {
+      const usersData = await response.json();
+      setIsLoading(false);
+      setUsers(usersData);
+    } else {
+      setIsLoading(false);
+      setIsError(true);
+    }
   };
 
   useEffect(() => {
     fetchUserData();
   }, []);
+
+  if (isLoading) {
+    return (
+      <article>
+        <h1> Data is loading... </h1>
+      </article>
+    );
+  }
+  if (isError) {
+    return (
+      <article>
+        <h1> Error happened... :/ </h1>
+      </article>
+    );
+  }
 
   return (
     <article>
