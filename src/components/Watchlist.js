@@ -18,12 +18,11 @@ const Watchlist = () => {
       <h3> {movies.length} movies on your watchlist.</h3>
       <section>
         {movies.map((movie) => {
-          const { id, img, title, releasedate, director } = movie;
+          const { id, img, title, director } = movie;
           return (
             <article key={id}>
-              <img className="small-imgs" src={img} alt={title} />
               <h1> Title: {title} </h1>
-              <p> Release date: {releasedate} </p>
+              <img className="small-imgs" src={img} alt={title} />
               <p> Director: {director}</p>
               <button className="remove-btn" onClick={() => removeMovie(id)}>
                 {" "}
