@@ -1,0 +1,24 @@
+h4 {
+  text-transform: lowercase;
+}
+h4 span {
+  text-transform: capitalize;
+}
+ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.user {
+  padding-bottom: 20px;
+}
+.user-name {
+  text-transform: capitalize;
+}
+.user-link {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.user-img {
+  height: 200px;
+  width: 200px;
+}

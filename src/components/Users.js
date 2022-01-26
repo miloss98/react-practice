@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../styles/users.css";
 
 const url = "https://api.github.com/users";
 
@@ -45,12 +46,16 @@ const Users = () => {
         {users.map((user) => {
           const { id, login, avatar_url, html_url, type } = user;
           return (
-            <li key={id}>
-              <img src={avatar_url} alt={login} />
+            <li className="user" key={id}>
+              <img className="user-img" src={avatar_url} alt={login} />
               <div>
-                <h4>{login}</h4>
-                <a href={html_url}>Profile</a>
-                <h4>User type: {type}</h4>
+                <h4 className="user-name">{login}</h4>
+                <a className="user-link" href={html_url}>
+                  Profile
+                </a>
+                <h4 id="user-type">
+                  User type: <span>{type}</span>
+                </h4>
               </div>
             </li>
           );
