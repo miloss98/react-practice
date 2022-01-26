@@ -41,7 +41,7 @@ const Users = () => {
 
   return (
     <article>
-      <h2>Github users fetch</h2>;
+      <h2>Github users fetch</h2>
       <ul>
         {users.map((user) => {
           const { id, login, avatar_url, html_url, type } = user;

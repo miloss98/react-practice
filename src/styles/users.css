@@ -1,3 +1,6 @@
+h2 {
+  padding: 15px 0px 15px 0px;
+}
 h4 {
   text-transform: lowercase;
 }
@@ -6,7 +9,8 @@ h4 span {
 }
 ul {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
+  list-style: none;
 }
 .user {
   padding-bottom: 20px;
@@ -19,6 +23,6 @@ ul {
   text-decoration: none;
 }
 .user-img {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 250px;
 }
