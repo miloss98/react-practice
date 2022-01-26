@@ -4,7 +4,7 @@ import "./styles/app.css";
 import Movie from "./components/Movie";
 import Watchlist from "./components/Watchlist";
 import Users from "./components/Users";
-//import Counter from "./components/Counter";
+import Counter from "./components/Counter";
 
 const App = () => {
   return (
@@ -21,11 +21,11 @@ const App = () => {
         </div>
       </div>
 
-      {/*  <div className="container">
+      <div className="container">
         <div>
           <Counter />
         </div>
-      </div> */}
+      </div>
 
       <div className="container">
         <div>
