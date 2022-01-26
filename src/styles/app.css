@@ -7,18 +7,16 @@
 
 .title {
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
+  font-size: 3rem;
 }
 .all {
-  margin: 6rem 0rem 0rem 6rem;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: flex-start;
-  align-items: center;
+  margin: 2rem 0rem 2rem 0rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .big-imgs {
-  height: 250px;
-  width: 220px;
+  height: 300px;
+  width: 250px;
 }
