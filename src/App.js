@@ -11,8 +11,8 @@ const App = () => {
     <>
       <h1 className="title"> Movies list </h1>
       <div className="all">
-        {moviesData.map((movie) => {
-          return <Movie {...movie}></Movie>;
+        {moviesData.map((movie, index) => {
+          return <Movie key={index} {...movie}></Movie>;
         })}
       </div>
       <div className="container">
