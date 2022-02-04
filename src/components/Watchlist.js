@@ -13,6 +13,14 @@ const Watchlist = () => {
     setMovies(newWatchlist);
   };
 
+  if (movies.length === 0) {
+    return (
+      <section className="empty-list">
+        <h3> Watchlist is empty! </h3>
+        <button onClick={() => setMovies(moviesData)}> Refresh </button>
+      </section>
+    );
+  }
   return (
     <main>
       <h3> {movies.length} movies on your watchlist.</h3>

@@ -45,3 +45,9 @@ article p {
   height: 2rem;
   width: 10rem;
 }
+/* empty list */
+.empty-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
