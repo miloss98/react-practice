@@ -1,6 +1,4 @@
 import React from "react";
-import { moviesData } from "./data/moviesData";
-import "./styles/app.css";
 import Movie from "./components/Movie";
 import Watchlist from "./components/Watchlist";
 import Users from "./components/Users";
@@ -9,11 +7,8 @@ import Counter from "./components/Counter";
 const App = () => {
   return (
     <>
-      <h1 className="title"> Movies list </h1>
-      <div className="all">
-        {moviesData.map((movie, index) => {
-          return <Movie key={index} {...movie}></Movie>;
-        })}
+      <div>
+        <Movie />
       </div>
       <div className="container">
         <div>
