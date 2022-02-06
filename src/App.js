@@ -7,26 +7,10 @@ import Counter from "./components/Counter";
 const App = () => {
   return (
     <>
-      <div>
-        <Movie />
-      </div>
-      <div className="container">
-        <div>
-          <Watchlist />
-        </div>
-      </div>
-
-      <div className="container">
-        <div>
-          <Counter />
-        </div>
-      </div>
-
-      <div className="container">
-        <div>
-          <Users />
-        </div>
-      </div>
+      <Movie />
+      <Watchlist />
+      <Users />
+      <Counter />
     </>
   );
 };
