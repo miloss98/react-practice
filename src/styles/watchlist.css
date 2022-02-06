@@ -6,7 +6,7 @@ h3 {
 }
 section {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 }
 section h3 {
   font-size: 2rem;
