@@ -3,6 +3,7 @@ import Movie from "./components/Movie";
 import Watchlist from "./components/Watchlist";
 import Users from "./components/Users";
 import Counter from "./components/Counter";
+import LoremIpsum from "./components/LoremIpsum";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Watchlist />
       <Users />
       <Counter />
+      <LoremIpsum />
     </>
   );
 };
