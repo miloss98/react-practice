@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { textsData } from "../data/textsData"
 
 
-function LoremIpsum() {
+const LoremIpsum = () => {
   const [data, setData] = useState([]);
   const [count, setCount] = useState("");
 
