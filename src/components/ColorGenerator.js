@@ -6,7 +6,7 @@ import "../styles/colorgenerator.css";
 const ColorGenerator = () => {
   const [color, setColor] = useState("")
   const [error, setError] = useState(false);
-  const [list, setList] = useState([])
+  const [list, setList] = useState(new Values("#f0f200").all(10))
 
   const handleSubmit = (e)=>{
     e.preventDefault();
@@ -30,7 +30,7 @@ const ColorGenerator = () => {
         type='text'
         value={color}
         onChange={(e) => setColor(e.target.value)}
-        placeholder='#f15025'
+        placeholder='#f0f200'
         className={`${error ? 'error' : null}`}
       />
       <button className='btn' type='submit'>
