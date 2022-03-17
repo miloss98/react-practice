@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "../styles/forms.css"
 
 const Forms = () => {
  
@@ -23,7 +24,7 @@ const Forms = () => {
 
   return (
     
-    <article>
+    <article className="container">
        <div>
           <form > 
             <label htmlFor="firstName"> Enter your name here: </label>
@@ -43,10 +44,12 @@ const Forms = () => {
               const {firstName, email, age, id} = person;
               return (
                 <>
-                  <p> person id: {id} </p>
-                  <h4> my name is : {firstName} </h4>
-                  <span>my age is: {age} </span> 
-                  <p> my email is : {email} </p>
+                <article className="person-data">
+                  <p> id: <span className="info"> {id} </span> </p>
+                  <h4> name: <span className="info"> {firstName}</span> </h4>
+                  <p> age: <span className="info"> {age} </span> </p> 
+                  <p> email: <span className="info"> {email} </span> </p>
+                </article>
               </>
               );
             })}
