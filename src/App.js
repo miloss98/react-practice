@@ -5,6 +5,7 @@ import Users from "./components/Users";
 import Counter from "./components/Counter";
 import Forms from "./components/Forms"
 import LoremIpsum from "./components/LoremIpsum";
+import ColorGenerator from "./components/ColorGenerator";
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Counter />
       <Forms />
       <LoremIpsum />
+      <ColorGenerator />
     </>
   );
 };

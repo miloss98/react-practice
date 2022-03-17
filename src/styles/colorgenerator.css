@@ -1,0 +1,21 @@
+.container{ 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .colors {
+    min-height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223.33px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(96px, 1fr));
+  }
+  .color {
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: none;
+    margin: 1px;
+    border: 1px solid black;
+  }
+.color-light{
+  color: white;
+}
