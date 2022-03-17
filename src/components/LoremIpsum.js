@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { textsData } from "../data/textsData"
+import "../styles/loremipsum.css"
 
 
 const LoremIpsum = () => {
@@ -23,7 +24,7 @@ const LoremIpsum = () => {
   }
   
   return (
-    <div>
+    <div className="all">
       <form onSubmit={handleSubmit}> 
         <label htmlFor="inputField"> Enter the number of paragraphs you want. </label>
         <br></br>
@@ -33,7 +34,11 @@ const LoremIpsum = () => {
 
       <div>
         {data.map((paragraph, index)=>{
-          return  <p key={index}>{paragraph} </p>
+          return  (
+          <article className="paragraph">
+            <p key={index}>{paragraph} </p>
+           </article>
+          )
         })}
       </div>
     </div>
