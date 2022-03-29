@@ -1,7 +1,7 @@
 import { moviesData } from "../data/moviesData";
 import "../styles/movie.css";
 
-const Movie = () => {
+const Movies = () => {
   return (
     <section className="content">
       <h1 className="title"> Movies list </h1>
@@ -22,4 +22,4 @@ const Movie = () => {
     </section>
   );
 };
-export default Movie;
+export default Movies;
