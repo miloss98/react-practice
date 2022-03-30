@@ -1,51 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Movies from "./Movies";
-import Watchlist from "./Watchlist";
-import Users from "./Users";
-import Counter from "./Counter";
-import Forms from "./Forms";
-import LoremIpsum from "./LoremIpsum";
-import ColorGenerator from "./ColorGenerator/ColorGenerator";
+import About from "./../pages/About";
+import Contact from "./../pages/Contact";
 
 const Navbar = () => {
   return (
     <article>
       <ul>
-        Links:
         <li>
-          <Link to="/movies" element={<Movies />}>
-            Movies page
+          <Link to="/" element={<About />}>
+            {" "}
+            Home
           </Link>
         </li>
         <li>
-          <Link to="/watchlist" element={<Watchlist />}>
-            Watchlist
+          <Link to="/about" element={<About />}>
+            {" "}
+            About
           </Link>
         </li>
         <li>
-          <Link to="/users" element={<Users />}>
-            Users
-          </Link>
-        </li>
-        <li>
-          <Link to="/counter" element={<Counter />}>
-            Counter
-          </Link>
-        </li>
-        <li>
-          <Link to="/forms" element={<Forms />}>
-            Forms
-          </Link>
-        </li>
-        <li>
-          <Link to="/lorem-ipsum" element={<LoremIpsum />}>
-            Lorem Ipsum generator
-          </Link>
-        </li>
-        <li>
-          <Link to="/color-generator" element={<ColorGenerator />}>
-            Color generator
+          <Link to="/contact" element={<Contact />}>
+            {" "}
+            Contact us
           </Link>
         </li>
       </ul>
