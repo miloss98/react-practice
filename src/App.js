@@ -1,15 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//pages
+import HomePage from "./pages/HomePage";
 //components
-import HomePage from "./components/HomePage";
 import Movies from "./components/Movies";
 import Watchlist from "./components/Watchlist";
 import Users from "./components/Users";
 import Counter from "./components/Counter";
 import Forms from "./components/Forms";
 import LoremIpsum from "./components/LoremIpsum";
-import ColorGenerator from "./components/ColorGenerator";
-//routes
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ColorGenerator from "./components/ColorGenerator/ColorGenerator";
 
 const App = () => {
   return (

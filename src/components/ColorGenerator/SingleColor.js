@@ -1,5 +1,5 @@
 import { useState, useEffect, React } from "react";
-import "../styles/colorgenerator.css";
+import "../../styles/colorgenerator.css";
 
 const SingleColor = ({ rgb, weight, index, hexColor }) => {
   const bcg = rgb.join(",");
