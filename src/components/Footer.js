@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import About from "./About";
-import Contact from "./Contact";
-
+import About from "./../pages/About";
+import Contact from "./../pages/Contact";
 const Footer = () => {
   return (
     <div>

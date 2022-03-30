@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //pages
 import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 //components
 import Movies from "./components/Movies";
 import Watchlist from "./components/Watchlist";
@@ -23,6 +25,8 @@ const App = () => {
         <Route path="/forms" element={<Forms />} />
         <Route path="/lorem-ipsum" element={<LoremIpsum />} />
         <Route path="/color-generator" element={<ColorGenerator />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

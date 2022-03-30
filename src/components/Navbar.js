@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Movies from "./../components/Movies";
-import Watchlist from "./../components/Watchlist";
-import Users from "./../components/Users";
-import Counter from "./../components/Counter";
-import Forms from "./../components/Forms";
-import LoremIpsum from "./../components/LoremIpsum";
-import ColorGenerator from "./../components/ColorGenerator/ColorGenerator";
+import Movies from "./Movies";
+import Watchlist from "./Watchlist";
+import Users from "./Users";
+import Counter from "./Counter";
+import Forms from "./Forms";
+import LoremIpsum from "./LoremIpsum";
+import ColorGenerator from "./ColorGenerator/ColorGenerator";
 
 const Navbar = () => {
   return (
