@@ -7,8 +7,14 @@ const Footer = () => {
   return (
     <div>
       <div>This is Footer</div>
-      <Link to="/about" element={<About />} />
-      <Link to="/contact" element={<Contact />} />
+      <Link to="/about" element={<About />}>
+        {" "}
+        About us{" "}
+      </Link>
+      <Link to="/contact" element={<Contact />}>
+        {" "}
+        Contact us
+      </Link>
     </div>
   );
 };
