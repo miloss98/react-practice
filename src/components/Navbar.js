@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import About from "./../pages/About";
 import Contact from "./../pages/Contact";
 
@@ -8,22 +8,44 @@ const Navbar = () => {
     <article>
       <ul>
         <li>
-          <Link to="/" element={<About />}>
+          <NavLink
+            to="/"
+            style={({ isActive }) => {
+              return { color: isActive ? "red" : "black" };
+            }}
+            element={<About />}
+          >
             {" "}
             Home
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" element={<About />}>
+          <NavLink
+            to="/about"
+            style={({ isActive }) => {
+              return {
+                color: isActive ? "red" : "black",
+              };
+            }}
+            element={<About />}
+          >
             {" "}
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" element={<Contact />}>
+          <NavLink
+            to="/contact"
+            style={({ isActive }) => {
+              return {
+                color: isActive ? "red" : "black",
+              };
+            }}
+            element={<Contact />}
+          >
             {" "}
             Contact us
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </article>
