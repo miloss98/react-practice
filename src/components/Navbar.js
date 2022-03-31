@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import About from "./../pages/About";
 import Contact from "./../pages/Contact";
+import "./../styles/navlinkstyles.css";
 
 const Navbar = () => {
   return (
@@ -10,9 +11,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/"
-            style={({ isActive }) => {
-              return { color: isActive ? "red" : "black" };
-            }}
+            className={({ isActive }) => (isActive ? "active" : "link")}
             element={<About />}
           >
             {" "}
@@ -22,11 +21,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/about"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "red" : "black",
-              };
-            }}
+            className={({ isActive }) => (isActive ? "active" : "link")}
             element={<About />}
           >
             {" "}
@@ -36,11 +31,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/contact"
-            style={({ isActive }) => {
-              return {
-                color: isActive ? "red" : "black",
-              };
-            }}
+            className={({ isActive }) => (isActive ? "active" : "link")}
             element={<Contact />}
           >
             {" "}

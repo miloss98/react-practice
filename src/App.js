@@ -6,7 +6,6 @@ import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
-
 //components
 import Movies from "./components/Movies";
 import Watchlist from "./components/Watchlist";
